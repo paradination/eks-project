@@ -6,7 +6,7 @@ git clone -b cloudformation-infra https://github.com/paradination/eks-project.gi
 2. Change the directory to eks-managed folder
 
 ```
-cd eks-demo/eks-managed/
+cd eks-project/eks-managed/
 ```
 b. to connect to the cluster
 aws eks --region us-east-1 update-kubeconfig --name eks-cluster

@@ -2,12 +2,12 @@ Get into eks-demo/eks-managed/cluster-autoscaler folder
 
 1. Clone the GitHub repo
 ```
-git clone https://github.com/Thripura/eks-demo.git
+git clone -b cloudformation-infra https://github.com/paradination/eks-project.git
 ```
 
 2. Get into cluster-autoscaler folder
 ```
-cd eks-demo/eks-managed/cluster-autoscaler
+cd eks-project/eks-managed/cluster-autoscaler
 ```
 
 3. Update the Cluster name in the below command and execute it.
@@ -42,6 +42,7 @@ curl -O https://raw.githubusercontent.com/kubernetes/autoscaler/master/cluster-a
 6. Update the cluster name, version to v1.23.1 and below arguments in the above downloaded file and execute below command
 - --skip-nodes-with-system-pods=false
 - --scale-down-unneeded-time=2s
+
 ```
 kubectl apply -f cluster-autoscaler-autodiscover.yaml
 ```

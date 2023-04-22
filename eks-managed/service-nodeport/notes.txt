@@ -6,7 +6,7 @@ git clone -b cloudformation-infra https://github.com/paradination/eks-project.gi
 2. Change the directory to eks-managed folder
 
 ```
-cd eks-demo/eks-managed/service-nodeport
+cd eks-project/eks-managed/service-nodeport
 ```
 
 3. Execute the below command to create a deployment and service(Nodeport). Create the TG's

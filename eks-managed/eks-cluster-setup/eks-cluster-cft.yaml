@@ -462,7 +462,8 @@ Resources:
           echo 'export PATH=$PATH:$HOME/bin' >> ~/.bashrc
           aws-iam-authenticator help
           # Kubeconfig file configuration
-          aws eks --region ${AWS::Region}  update-kubeconfig --name ${EnvironmentName}
+          # aws eks --region ${AWS::Region}  update-kubeconfig --name ${EnvironmentName} #update below
+          aws eks --region us-east-1 update-kubeconfig --name eks-cluster
           export KUBECONFIG=~/.kube/config
           curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
           sudo mv /tmp/eksctl /usr/bin

@@ -1,10 +1,9 @@
 #!/bin/bash -xe
 eks_cluster_name=eks-cluster
-region=us-west-2
+region=us-east-1
 account_number=$(aws sts get-caller-identity --query Account --output text)
 policy_arn="arn:aws:iam::${account_number}:policy/eks-cluster-ca-asg-policy"
-git clone https://github.com/Thripura/eks-demo.git
-cd eks-demo/eks-managed/cluster-autoscaler
+cd eks-project/eks-managed/cluster-autoscaler
 current_dir=$(pwd)
 eksctl utils associate-iam-oidc-provider   --cluster ${eks_cluster_name} --approve --region ${region}
 aws iam create-policy  --policy-name ${eks_cluster_name}-ca-asg-policy  --policy-document file://cluster-autoscaler.json
