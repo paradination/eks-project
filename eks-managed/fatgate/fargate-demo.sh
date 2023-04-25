@@ -1,10 +1,10 @@
 #!/bin/bash -xe
 # Modify below values accordingly
 eks_cluster_name=eks-cluster-fargate
-region=us-west-2
-vpc_id="vpc-02227ca7af5c4f3e4"
-private_subnet_1="subnet-017ee97dbf82e3781"
-private_subnet_2="subnet-0034176b567174f70"
+region=us-east-1
+vpc_id="vpc-0ae7b71d6501c470a"
+private_subnet_1="subnet-074447ed0f2f11903"
+private_subnet_2="subnet-00f75167f67a3c65f"
 # Custom script for setting up Fargate profiles and AWS Loadbalancer controller
 account_number=$(aws sts get-caller-identity --query Account --output text)
 aws eks create-fargate-profile \

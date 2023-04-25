@@ -2,7 +2,7 @@
 ```
 aws eks create-fargate-profile \
     --fargate-profile-name coredns \
-    --cluster-name YOUR_CLUSTER_NAME --region us-west-2 \
+    --cluster-name YOUR_CLUSTER_NAME --region us-east-1 \
     --pod-execution-role-arn arn:aws:iam::YOUR_ACCOUNT_NUMBER:role/AmazonEKSFargatePodExecutionRole \
     --selectors namespace=kube-system \
     --subnets subnet-0000000000000001 subnet-0000000000000002 subnet-0000000000000003
