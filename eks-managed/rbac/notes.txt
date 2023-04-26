@@ -1,6 +1,6 @@
 1. Clone the GitHub repo
 ```
-git clone https://github.com/Thripura/eks-demo.git
+git clone -b cloudformation-infra https://github.com/paradination/eks-project.git
 ```
 
 2. Get into cluster-autoscaler folder
